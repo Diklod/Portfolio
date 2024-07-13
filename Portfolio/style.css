@@ -1,4 +1,4 @@
-/* GERAL */
+/* ESTILO GERAL */
 *{
     margin: 0;
     padding: 0;
@@ -11,12 +11,42 @@ body {
     height: 100vh;
 }
 
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #04BF9D;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgb(0, 255, 0);
+    transform: scale(1.05);
+}
+
 .interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
-/* ESTILO */
+.flex {
+    display: flex;
+}
+
+h2.titulo {
+    color: #04BF9D;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #5FCDD9;
+}
+
+/* ESTILO DO CABEÇALHO */
 
 header {
     padding: 40px 4%;
@@ -30,6 +60,7 @@ header > .interface {
 
 header a {
     color: #00816ac4;
+    font-size: 17px;
     text-decoration: none;
     display: inline-block;
     transition: 0.2s;
@@ -49,16 +80,90 @@ header nav ul li {
     padding: 0 40px;
 }
 
-header .btn-contato button {
-    padding: 10px 40px;
-    font-size: 18px;
-    font-weight: 700;
-    background-color: #04BF9D;
-    border: 0;
-    border-radius: 30px;
-    cursor: pointer;
+/* ESTILO DO TOPO */
+
+section.topo-do-site {
+    padding: 40px 4%;
 }
 
-header .btn-contato button:hover {
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color:rgb(2, 204, 167);
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: #027373;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: white;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site {
+    border: 5px solid #5FCDD9;
+    border-radius: 25px 25px 0px 0px;
+    position: relative;
+    animation: img-float 2s ease-in-out infinite alternate;
+}
+
+.topo-do-site .img-topo-site:hover {
+    transition: 0.2s;
     box-shadow: 0px 0px 8px rgb(0, 255, 0);
+    transform: scale(1.05);
+    border-radius: 25px 25px 0px 0px;
+}
+
+/* .topo-do-site .img-topo-site img {
+    position: relative;
+    animation: img-float 2s ease-in-out infinite alternate;
+} */
+
+@keyframes img-float {
+    0%{
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* ESTILO DOS CONHECIMENTOS */
+
+section.conhecimentos {
+    padding: 40px 4%;
+}
+
+section.conhecimentos .flex {
+    gap: 60px;
+}
+
+.conhecimentos .conhecimentos-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: 0.2s;
+}
+
+.conhecimentos .conhecimentos-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.322);
+}
+
+.conhecimentos .conhecimentos-box i{
+    font-size: 70px;
+    color: #5FCDD9;
+}
+
+.conhecimentos .conhecimentos-box h3 {
+    font-size: 25px;
+    margin: 15px 0;
 }
